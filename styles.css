@@ -1,8 +1,43 @@
-:root {
-    --ada-blue: #336178;
-    --ada-red: #ae485e;
+body {
+    font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: var(--ada-blue);
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.hover-text {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.box:hover {
+    background: linear-gradient(135deg, #0056b3, #007BFF);
+    transform: scale(1.05);
+}
+
+.box:hover .hover-text {
+    opacity: 1;
 }
