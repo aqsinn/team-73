@@ -1,43 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
     position: relative;
+    width: 200px;
     background: linear-gradient(135deg, #007BFF, #0056b3);
     color: white;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px;
     border-radius: 10px;
-    width: 60%;
-    max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    text-align: center;
     font-size: 1.1em;
     font-weight: bold;
     transition: transform 0.3s, background 0.3s;
 }
 
 .hover-text {
+    display: none;
     position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .box:hover {
     background: linear-gradient(135deg, #0056b3, #007BFF);
-    transform: scale(1.05);
+    
 }
 
 .box:hover .hover-text {
-    opacity: 1;
+    display: block;
 }
