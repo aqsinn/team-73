@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
@@ -40,11 +40,33 @@ body {
     border-radius: 5px;
 }
 
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .box:hover {
     background: linear-gradient(135deg, #0056b3, #007BFF);
-    
 }
 
 .box:hover .hover-text {
     display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 200px;
 }
