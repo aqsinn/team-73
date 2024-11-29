@@ -55,3 +55,20 @@ body {
     width: 100px;
     border-radius: 50%;
 }
+
+.box {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #0d1b2a; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
