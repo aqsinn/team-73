@@ -1,115 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    display: block;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Set the font for the entire body */
+    padding: 0;
+    background-color: #e0e1dd;
 }
 
-body {
-    background-color: #a3a3a3; 
-    margin: 0; 
-    height: 100vh; 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0d1b2a;
+}
+
+.logo, .ada-logo {
+    height: 50px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end; 
-    padding: 10px; 
-    margin-top: -90px; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
 }
 
 .box {
-    position: relative;
-    width: 200px;
-    background: linear-gradient(135deg, #323232, #323233);
+    background-color: #415a77;
     color: white;
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center; 
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: transform 0.3s, background 0.3s;
-    margin-left: 20px; 
-}
-
-.hover-text {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    color: black;
-    padding: 5px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
+    flex: 0 0 350px;
+    height: auto;
+    font-size: 1.2em;
 }
 
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.box:hover {
-    background: linear-gradient(135deg, #ffffff, #5d5d5d);
-}
-
-.box:hover .hover-text {
+.box a {
     display: block;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-
+    color: #e0e1dd;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
 }
 
 .team-member {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; /* Center align the content */
-    margin-bottom: 40px; 
-    padding: 20px; 
-    width: 250px; 
-    height: 350px; 
-    border: 1px solid #000; 
-    background-color: #989898; 
-    margin: 20px; /* space between team member boxes */
-    text-align: center; /* Center align text */
+    margin: 20px;
+    text-align: center;
 }
 
 .profile-pic {
-    width: 180px; 
-    height: auto; 
-    object-fit: contain; 
-    margin: 10px 0; 
-    border: 1px solid #ccc; 
-}
-
-.header {
-    display: flex; 
-    align-items: center; 
-    padding: 10px; 
-}
-
-.logo {
-    width: 100px; 
-    height: auto; 
-}
-
-.ada-logo {
-    width: 100px; 
-    height: auto; 
-    margin-left: 10px; 
+    width: 100px;
+    border-radius: 50%;
 }
