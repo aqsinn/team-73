@@ -117,3 +117,13 @@ body {
     margin-left: 20px; /* Space between text and image */
     margin-bottom: 20px; /* Space below the image */
 }
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Scale the image to 110% of its original size */
+}
