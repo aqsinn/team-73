@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<!-- 
-    SITE 1101 Principles of Information Systems 
-    (c)202X by Name Surname 
-    Submitted in partial fulfillment of the requirements of the course.
--->
-<html>
-    <head>
-        <title>Homework 3: Programming art</title>
-        <link rel="stylesheet" href="styles.css">  
-        <script type="text/javascript" src="scripts.js"></script>      
-    </head>
-    <body>
-        #Homework 3: How websites work?
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">  
+    <title>Homework 3: Programming art</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <a href="https://www.ada.edu.az/en" target="_blank">
+            <img src="adalogo.png" alt="Ada Logo" class="ada-logo">
+        </a>
+    </div>
+
+    <main>
+        <h1>Homework 3: Programming Art</h1>
         <div style="text-align:center">
             <canvas id="art-canvas" width="640" height="480">
                 Sorry ... your browser doesn't support the HTML5 canvas element.
             </canvas>        
         </div>          
 
+        <script type="text/javascript" src="scripts.js"></script>
         <script type="text/javascript">
             // Get reference to the 2D context of the canvas
             let canvas = document.getElementById("art-canvas");
             let context = canvas.getContext("2d");
             // Set the color for drawing lines using red, green and blue components
-            // context.strokeStyle = 'rgb(255, 0, 0)';
             context.strokeStyle = `rgb(${255 * Math.random()}, ${255 * Math.random()}, ${255 * Math.random()})`;
             DrawSpiral(context);
         </script>
-    </body>
+    </main>
+
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <div class="email-container">
+            <div class="email-item">
+                <p class="email">ababayeva17155@ada.edu.az</p>
+                <img src="ayan.jpeg" class="profile-pic-hover">
+            </div>
+            <div class="email-item">
+                <p class="email">aimamaliyev24027@ada.edu.az</p>
+                <img src="pfp.jpg" class="profile-pic-hover">
+            </div>
+            <div class="email-item">
+                <p class="email">snajafzada20392@ada.edu.az</p>
+                <img src="sevinj.jpeg" class="profile-pic-hover">
+            </div>
+            <div class="email-item">
+                <p class="email">odadashov23448@ada.edu.az</p>
+                <img src="pfp.jpg" class="profile-pic-hover">
+            </div>
+        </div>
+    </div>
+</body>
 </html>
