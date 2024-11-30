@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Logic Gates</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e1dd;
+        }
+        .header {
+            background-color: #0d1b2a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #415a77;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .logic-gate {
+            margin: 20px 0;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between text and image */
+            align-items: center; /* Center items vertically */
+        }
+        .gate-image {
+            width: 170px; /* Increased width for larger images */
+            transition: transform 0.3s ease;
+        }
+        .not-gate-image {
+               height: 200px; /* Set a specific height for the NOT Gate image */
+               width: auto; /* Maintain aspect ratio */
+        }
+        .gate-image:hover {
+            transform: scale(1.1);
+        }
+        .gate-text {
+            flex: 1; /* Allow text to take available space */
+            text-align: left; /* Align text to the left */
+            margin-left: 10px; /* Add margin to create space between text and image */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <a href="https://www.ada.edu.az/en" target="_blank">
+            <img src="adalogo.png" alt="Ada Logo" class="ada-logo">
+        </a>
+    </div>
+    
+    <main>
+        <h2>Introduction to Logic Gates</h2>
+        <p>We constructed 4 basic logic gates during our 3 lab visits. Here are the details!</p>
+
+        <div class="logic-gate">
+            <div class="gate-text">
+                <h3>NOT Gate</h3>
+                <p>During our first visit, we worked on building the NOT and AND gates.
+
+                    We started with the NOT gate. The first problem was that LED was not lighting up. So we called our LC for help, and he informed us that our LED’s cathode and anode was inverted in addition to our wrong button placement. Then he deconstructed everything and we started constructing it on our own again. After we finished setting up, we faced the same problem again: the LED wouldn’t light up. After a bit of searching, we found out that the LED was connected the wrong way around again. Once Ayan flipped it to the correct orientation, the NOT gate worked. The LED was on, unless we pressed the button which turned it off.Then we deconstructed everything once again. Ayan and Sevinj started constructing, but this time, the video was on. </p>
+            </div>
+        </div>
+        <img src="not.jpeg" class="gate-image not-gate-image"> <!-- Added unique class -->
+        
+
+        <div class="logic-gate">
+            <div class="gate-text">
+                <h3>AND Gate</h3>
+                <p>
+                    Then we started to build the AND gate. Firstly, Agshin attached all components. After building the gate, our first attempt was unsuccessful. All the group members tried to find what is wrong.After taking a closer look, Sevinj and Ayan realized that the power wasn’t flowing to all four sections of the breadboard, so some parts weren’t getting power. So, we moved everything to one quarter of the breadboard. After we fixed our mistake AND gate worked. When we pressed both buttons at the same time, the LED turned on, because it allowed the current to flow through both transistors.
+                    .</p>
+            </div>
+            <img src="and.jpeg" class="gate-image">
+        </div>
+
+        <div class="logic-gate">
+            <div class="gate-text">
+                <h3>OR Gate</h3>
+                <p>During our second visit, we constructed the OR gate.
+
+                    We did not use any defaults when building the OR gate. Following the completion of the component attachments, which all three of us has contributed: Ayan, Sevinj and Aqshin. Sevinj tested the circuit and the LED lit up as we previously predicted when one or both buttons were pressed.
+                    The appropriate LED in the OR gate receives electricity when one of the buttons is pressed, causing the output to change HIGH and lighting the LED. The LED illuminates and the circuit is complete even if only one of the buttons is touched. This illustrates how an OR gate functions: if any input is HIGH, the output is HIGH.
+                    </p>
+            </div>
+            <img src="or.jpeg" class="gate-image">
+        </div>
+
+
+        <div class="logic-gate">
+            <div class="gate-text">
+                <h3>Bonus Task</h3>
+                <p>We decided to work with team 47 for the bonus task. So we divided the work: our team would create an AND gate, and team 47 would construct a NOT gate, and at the end we would combine them.
+                    Agshin started constructing the AND gate with the help of Ayan and Sevinj. We completed it under 3 minutes and everything seemd fine at first. However, when we connected it to the power supply, the LED didn’t light up. So, we asked the LC for help. After investigating for a few minutes, he also couln’t find any mistakes. Finally, after approximately 8 minutes, we found out that connnections were loose. After fixing it, we were ready to combine our breadboard with Team 47’s work.
+                    
+                    Agshin and Hussein were working together to attach the boards.They completed the task on their first try, but we forgot to shoot a video. So Huseyn detached the cables and attached them again with Agshin recording this time. </p>
+            </div>
+            <img src="bonus.jpeg" class="gate-image">
+        </div>
+    </main>
+</body>
+</html>
