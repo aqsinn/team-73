@@ -31,19 +31,16 @@ function turnLeft(degree) {
 }
 
 function DrawSpiral(context) {
-    // Inspired by Express Course (2024) Lesson 29: For Loops with Artist
-    // https://studio.code.org/s/express-2024/lessons/29/levels/5
-
-    // The initial position is in the center of the canvas
+    // Starts in the center of the canvas
     x = context.canvas.width / 2;
     y = context.canvas.height / 2;
-    // The initial orientation is zero degrees i.e. facing East
     angle = 0.0; 
     context.moveTo(x, y);
     context.beginPath();
-    for (let counter = 3; counter < 600; counter += 3) {
-        moveForward(counter, context);
+
+    for (let counter = 1; counter < 360; counter++) {
+        moveForward(counter**1.02, context); // Increases distance each time
         context.stroke();
-        turnRight(89);
+        turnRight(79); // Turns right to create intersections
     }
 }
