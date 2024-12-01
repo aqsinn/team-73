@@ -27,6 +27,35 @@
         ul {
             margin-bottom: 20px; 
         }
+
+        a {
+            color: inherit; 
+            text-decoration: none;  
+        }
+
+        .team-member {
+            position: relative;
+        }
+
+        .profile-pic-hover {
+            position: absolute;
+            left: 30px;
+            top: 300%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }   
+
+        .team-member:hover .profile-pic-hover {
+          display: block;
+        }
+
+        .team-introduction{
+            position: relative;
+            padding-left: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -43,11 +72,24 @@
         <section class="team-introduction">
             <h2>Website Project</h2>
             <p>
-                BIND-our team consists of four members: 
-                <a href="https://www.codecademy.com/profiles/AgshinImamaliyev" target="_blank">Agshin Imamaliyev</a>, 
-                <a href="https://www.codecademy.com/profiles/AyanBabayeva" target="_blank">Ayan Babayeva</a>, 
-                <a href="https://codecademy.com/profiles/snajafzada" target="_blank">Sevinj Najafzada</a>, 
-                and <a href="https://codecademy.com/profiles/oruj" target="_blank">Oruj Dadashov</a>.
+                BIND - our team consists of four members: 
+                <span class="team-member">
+                    <a href="https://www.codecademy.com/profiles/AgshinImamaliyev" target="_blank">Agshin Imamaliyev</a>
+                    <img src="pfp.jpg" class="profile-pic-hover" alt="Agshin Imamaliyev">
+                </span>, 
+                <span class="team-member">
+                    <a href="https://www.codecademy.com/profiles/AyanBabayeva" target="_blank">Ayan Babayeva</a>
+                    <img src="ayan.jpeg" class="profile-pic-hover" alt="Ayan Babayeva">
+                </span>, 
+                <span class="team-member">
+                    <a href="https://codecademy.com/profiles/snajafzada" target="_blank">Sevinj Najafzada</a>
+                    <img src="sevinj.jpeg" class="profile-pic-hover" alt="Sevinj Najafzada">
+                </span>, 
+                and 
+                <span class="team-member">
+                    <a href="https://codecademy.com/profiles/oruj" target="_blank">Oruj Dadashov</a>
+                    <img src="pfp.jpg" class="profile-pic-hover" alt="Oruj Dadashov">
+                </span>.
             </p>
             <h2>Features of the Website</h2>
             <ul>
