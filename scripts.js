@@ -9,25 +9,29 @@
 var x, y;
 var angle;
 
+ // Converts degrees to radians
 function radian(degree) {
-    return degree * Math.PI / 180;
+    return degree * Math.PI / 180; // Return the equivalent radians
 }
 
+// Moves the current position forward by a specified distance in the direction of the current angle
 function moveForward(distance, context) {
-    let a = radian(angle);
-    x = x + distance * Math.cos(a);
-    y = y + distance * Math.sin(a);
-    context.lineTo(x, y);    
+    let a = radian(angle); // Convert the current angle to radians
+    x = x + distance * Math.cos(a); // Update the x-coordinate based on the angle
+    y = y + distance * Math.sin(a); // Update the y-coordinate based on the angle
+    context.lineTo(x, y); // Draw a line to the new position
 }
 
+// Turns the current angle to the right by a specified degree
 function turnRight(degree) {
-    angle = angle - degree;
-    if (angle < 0) angle = angle + 360;
+    angle = angle - degree; // Decrease the angle to turn right
+    if (angle < 0) angle = angle + 360; // Wrap around if the angle is negative
 }
 
+// Turns the current angle to the left by a specified degree
 function turnLeft(degree) {
-    angle = angle + degree;
-    if (angle > 360) angle = angle - 360;
+    angle = angle + degree; // Increase the angle to turn left
+    if (angle > 360) angle = angle - 360; // Wrap around if the angle exceeds 360
 }
 
 function DrawSpiral(context) {
